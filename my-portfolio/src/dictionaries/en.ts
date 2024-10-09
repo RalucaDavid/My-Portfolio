@@ -5,5 +5,6 @@ export const Dictionary = {
     bestProjects: "Best projects",
     otherProjects: "Other projects",
     contact: "Contact",
-    ralucaDavid: "Raluca David"
+    davidRaluca: "David Raluca",
+    webDeveloper: "Web Developer"
 }

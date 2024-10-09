@@ -9,7 +9,7 @@ const NavigationBar = () => {
       <div className={classes.navBar}>
          <div className={classes.titlePortfolio}>
             <Text lineClamp={2} className={classes.title}>
-               {Dictionary.ralucaDavid}
+               {Dictionary.davidRaluca}
             </Text>
          </div>
          <div className={classes.portfolioInfo}>
