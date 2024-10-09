@@ -1,11 +1,11 @@
 
 import { Text } from '@mantine/core';
-import classes from './home-part.module.css';
+import classes from './home.module.css';
 import { Dictionary } from '../../dictionaries/en';
 
-const HomePart = () =>{
+const Home = () =>{
    return (
-    <div className={classes.background}>
+    <div className={classes.homeWrapper}>
       <Text className={classes.name}>
          {Dictionary.davidRaluca}
       </Text>
@@ -16,4 +16,4 @@ const HomePart = () =>{
    );
 }
 
-export default HomePart;
+export default Home;

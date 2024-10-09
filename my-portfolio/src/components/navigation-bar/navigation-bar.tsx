@@ -7,12 +7,6 @@ const NavigationBar = () => {
 
    return (
       <div className={classes.navBar}>
-         <div className={classes.titlePortfolio}>
-            <Text lineClamp={2} className={classes.title}>
-               {Dictionary.davidRaluca}
-            </Text>
-         </div>
-         <div className={classes.portfolioInfo}>
             <Text className={classes.text}>
                {Dictionary.home}
             </Text>
@@ -31,7 +25,6 @@ const NavigationBar = () => {
             <Text className={classes.text}>
                {Dictionary.contact}
             </Text>
-         </div>
       </div>
    );
 };

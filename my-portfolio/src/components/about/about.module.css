@@ -1,0 +1,31 @@
+
+.aboutWrapper{
+    background-color: #E0BBE4;
+    padding: 40px 60px 40px 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.greeting{
+    font-size: 40px !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.aboutMe{
+    color: white !important;
+    font-size: 20px !important;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    border-radius: 50% !important; 
+    object-fit: cover !important;
+}
