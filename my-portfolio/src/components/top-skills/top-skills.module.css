@@ -1,0 +1,69 @@
+
+.topSkillsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #FEC8D8;
+    padding: 40px 20px 40px 20px;
+}
+
+.title{
+    font-size: 40px !important;
+    font-weight: bold !important;
+    color: #D291BC !important;
+    margin-bottom: 15px !important;
+}
+
+.logoContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logoAnimation{
+    animation: rotateIn 2s 2s forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn{
+    0% { transform: translateY(100px); opacity: 0; }
+    50% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0); }
+}
+
+@keyframes rotateIn{
+    0% { transform: rotate(-180deg); opacity: 0; }
+    100% { transform: rotate(0deg); opacity: 1; }
+}
+
+@keyframes scaleUp{
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInLeft{
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
