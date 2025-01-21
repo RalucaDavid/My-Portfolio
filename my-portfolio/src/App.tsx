@@ -7,7 +7,7 @@ import TopSkills from './components/top-skills';
 
 function App() {
   return (
-    <div className='wrapper'>
+    <div>
       <NavigationBar/>
       <Home/>
       <About/>

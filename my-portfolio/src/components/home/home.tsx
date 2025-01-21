@@ -7,7 +7,7 @@ const Home = () =>{
    return (
     <div className={classes.homeWrapper}>
       <Text className={classes.name}>
-         {Dictionary.davidRaluca}
+         {Dictionary.ralucaDavid}
       </Text>
       <Text className={classes.job}>
          {Dictionary.webDeveloper}
