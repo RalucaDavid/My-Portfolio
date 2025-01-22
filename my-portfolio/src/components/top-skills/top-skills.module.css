@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    background-color: #FEC8D8;
+    background-color: var(--black-dark);
     padding: 40px 20px 40px 20px;
 }
 
 .title{
     font-size: 40px !important;
     font-weight: bold !important;
-    color: #D291BC !important;
+    color: var(--white) !important;
     margin-bottom: 15px !important;
 }
 

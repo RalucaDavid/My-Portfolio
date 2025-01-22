@@ -1,6 +1,6 @@
 
 .bestProjectsWrapper{
-    background-color: #D291BC;
+    background-color: var(--gray-light);
     padding: 40px 20px 40px 20px;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .title{
-    color:white !important;
+    color:var(--white) !important;
     font-size: 40px !important;
     font-weight: bold !important;
     margin-bottom: 20px !important;
