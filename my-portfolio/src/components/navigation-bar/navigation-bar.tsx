@@ -2,29 +2,27 @@
 import { Text } from '@mantine/core';
 import { Dictionary } from '../../dictionaries/en';
 import classes from './navigation-bar.module.css';
+import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
 
    return (
       <div className={classes.navBar}>
-            <Text className={classes.text}>
-               {Dictionary.home}
-            </Text>
-            <Text className={classes.text}>
-               {Dictionary.about}
-            </Text>
-            <Text className={classes.text}>
-               {Dictionary.topSkills}
-            </Text>
-            <Text className={classes.text}>
-               {Dictionary.bestProjects}
-            </Text>
-            <Text className={classes.text}>
-               {Dictionary.otherProjects}
-            </Text>
-            <Text className={classes.text}>
-               {Dictionary.contact}
-            </Text>
+         <Link to="/" className={classes.text}>
+            {Dictionary.home}
+         </Link>
+         <Link to="/about" className={classes.text}>
+            {Dictionary.about}
+         </Link>
+         <Link to="top-skills" className={classes.text}>
+            {Dictionary.topSkills}
+         </Link>
+         <Link to="/projects" className={classes.text}>
+            {Dictionary.projects}
+         </Link>
+         <Link to="/contact" className={classes.text}>
+            {Dictionary.contact}
+         </Link>
       </div>
    );
 };

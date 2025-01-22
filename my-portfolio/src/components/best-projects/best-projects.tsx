@@ -13,7 +13,7 @@ const BestProjects = () => {
     return (
         <div className={classes.bestProjectsWrapper}>
             <Text className={classes.title}>
-                {Dictionary.bestProjects}
+                {Dictionary.projects}
             </Text>
             <Carousel withControls dragFree withIndicators
                 slideSize="100%" height="500px">
