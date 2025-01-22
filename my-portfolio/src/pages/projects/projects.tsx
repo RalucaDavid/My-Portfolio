@@ -1,15 +1,15 @@
 
 import { Carousel } from '@mantine/carousel';
 import { Text } from '@mantine/core';
-import classes from './best-projects.module.css';
-import Project from '../project';
+import classes from './projects.module.css';
+import Project from '../../components/project';
 import chatConnectPhoto from '../../assets/chat-connect.png';
 import flightBookingPhoto from '../../assets/flight-booking.png';
 import checkersPhoto from '../../assets/checkers.png';
 import garticPhoto from '../../assets/gartic.png';
 import { Dictionary } from '../../dictionaries/en';
 
-const BestProjects = () => {
+const Projects = () => {
     return (
         <div className={classes.bestProjectsWrapper}>
             <Text className={classes.title}>
@@ -46,4 +46,4 @@ const BestProjects = () => {
     );
 };
 
-export default BestProjects;
+export default Projects;

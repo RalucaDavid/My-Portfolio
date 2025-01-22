@@ -14,9 +14,6 @@ const NavigationBar = () => {
          <Link to="/about" className={classes.text}>
             {Dictionary.about}
          </Link>
-         <Link to="top-skills" className={classes.text}>
-            {Dictionary.topSkills}
-         </Link>
          <Link to="/projects" className={classes.text}>
             {Dictionary.projects}
          </Link>
