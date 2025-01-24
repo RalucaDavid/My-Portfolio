@@ -21,7 +21,6 @@
 
 @media (max-width: 768px) {
     .navBar {
-        flex-direction: column;
         height: auto;
         padding: 20px;
     }

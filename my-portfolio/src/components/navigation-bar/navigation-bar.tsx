@@ -1,5 +1,3 @@
-
-import { Text } from '@mantine/core';
 import { Dictionary } from '../../dictionaries/en';
 import classes from './navigation-bar.module.css';
 import { Link } from 'react-router-dom';
