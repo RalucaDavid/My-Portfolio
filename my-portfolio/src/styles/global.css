@@ -1,8 +1,19 @@
 :root {
+    /* Theme */
     --gray-light: #7D7F80;
     --purple: #9615DB;
     --gray-medium: #D2D3D3;
     --gray-dark: #555759;
     --black-dark: #2D3032;
     --white: #FFFFFF;
+
+    /* Social Media */
+    --linkedin: #0077B5;
+    --github:#333;
+    --email: #D14836;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --linkedin-hover: #005983;
+    --github-hover: #24292e;
+    --email-hover: #b1362d;
+    --shadow-hover:rgba(0, 0, 0, 0.2);
 }
