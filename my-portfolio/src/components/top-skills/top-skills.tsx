@@ -1,4 +1,3 @@
-
 import { Text } from '@mantine/core';
 import classes from './top-skills.module.css';
 import classNames from 'classnames';
@@ -10,9 +9,16 @@ const TopSkills = () => {
       <div className={classes.topSkillsWrapper}>
          <Text className={classes.title}>{Dictionary.topSkills}</Text>
          <div className={classes.logoContainer}>
-            {skills.map((skill, index) => (
+            {skills.slice(0, 5).map((skill, index) => (
                <div key={index} className={classNames(classes.logo, classes.logoAnimation)}>
-                  <img src={skill.src} alt={skill.alt} />
+                 <img src={skill.src} alt={skill.alt} />
+               </div>
+            ))}
+         </div>
+         <div className={classes.logoContainer}>
+            {skills.slice(5, 10).map((skill, index) => (
+               <div key={index} className={classNames(classes.logo, classes.logoAnimation)}>
+                 <img src={skill.src} alt={skill.alt} />
                </div>
             ))}
          </div>
