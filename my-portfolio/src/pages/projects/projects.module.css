@@ -1,11 +1,12 @@
 
 .bestProjectsWrapper{
-    background-color: var(--gray-light);
-    padding: 40px 20px 40px 20px;
+    padding: 100px;
     display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 .title{
@@ -13,4 +14,11 @@
     font-size: 40px !important;
     font-weight: bold !important;
     margin-bottom: 20px !important;
+}
+
+.projectsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

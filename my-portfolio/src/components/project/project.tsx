@@ -1,25 +1,55 @@
-
-import { Image } from '@mantine/core';
+import { Button, Card, Group, Image, Text } from '@mantine/core';
 import classes from './project.module.css';
 
 interface ProjectProps {
     src: string;
     link: string;
     description: string;
-    title: string;
+    name: string;
+    buttonText: string;
+    technologies: string[];
 }
 
-const Project = ({ src, link, description, title }: ProjectProps) => {
+const Project = ({ src, link, description, name, buttonText, technologies }: ProjectProps) => {
+    const openLink = () => {
+        try {
+            const url = new URL(link);
+            window.open(url.toString(), '_blank');
+        } catch (error) {
+            console.error("Invalid URL:", link);
+        }
+    };
+
     return (
-        <a href={link} className={classes.project} target="_blank" rel="noopener noreferrer">
-            <div className={classes.imageContainer}>
-                <Image src={src} />
-                <div className={classes.overlay}>
-                    <h3 className={classes.title}>{title}</h3>
-                    <p className={classes.description}>{description}</p>
-                </div>
-            </div>
-        </a>
+        <Card shadow="sm" padding="sm" radius="md" withBorder className={classes.transparentCard}>
+            <Card.Section>
+                <Image
+                    src={src}
+                    height={160}
+                    alt={name}
+                />
+            </Card.Section>
+
+            <Group justify="space-between" mt="sm" mb="xs">
+                <Text fw={500}>{name}</Text>
+            </Group>
+
+            <Text size="sm" c="dimmed">
+                {description}
+            </Text>
+
+            <Group mt="xs">
+                <Text className={classes.technologies}>
+                    {technologies.join(" | ")}
+                </Text>
+            </Group>
+
+            <Button fullWidth mt="sm" radius="md" className={classes.customButton}
+                onClick={link.trim() !== "" ? openLink : undefined}
+            >
+                {buttonText}
+            </Button>
+        </Card>
     );
 };
 

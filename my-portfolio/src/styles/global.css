@@ -18,4 +18,10 @@
     --github-hover: #24292e;
     --email-hover: #b1362d;
     --shadow-hover:rgba(0, 0, 0, 0.2);
+
+    /* Project */
+    --background-transparent: rgba(0, 0, 0, 0.5);
+    --purple-hover: rgba(150, 21, 219, 0.3);
+    --purple-shadow: rgba(150, 21, 219, 0.1);
+    --purple-small: rgba(150, 21, 219, 0.9);
 }

@@ -1,13 +1,8 @@
-
-import { Carousel } from '@mantine/carousel';
 import { Text } from '@mantine/core';
 import classes from './projects.module.css';
-import Project from '../../components/project';
-import chatConnectPhoto from '../../assets/chat-connect.png';
-import flightBookingPhoto from '../../assets/flight-booking.png';
-import checkersPhoto from '../../assets/checkers.png';
-import garticPhoto from '../../assets/gartic.png';
 import { Dictionary } from '../../dictionaries/en';
+import Project from '../../components/project';
+import { specialProjects, webProjects } from '../../data/projects';
 
 const Projects = () => {
     return (
@@ -15,33 +10,23 @@ const Projects = () => {
             <Text className={classes.title}>
                 {Dictionary.projects}
             </Text>
-            <Carousel withControls dragFree withIndicators
-                slideSize="100%" height="500px">
-                <Carousel.Slide>
-                    <Project src={chatConnectPhoto}
-                        link={'https://github.com/RalucaDavid/Chat-Connect'}
-                        description={Dictionary.chatConnectDescription}
-                        title={Dictionary.chatConnect} />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                    <Project src={flightBookingPhoto}
-                        link={'https://github.com/RalucaDavid/Flight-Booking'}
-                        description={Dictionary.flightBookingDescription}
-                        title={Dictionary.flightBooking} />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                    <Project src={garticPhoto}
-                        link={'https://github.com/RalucaDavid/Gartic'}
-                        description={Dictionary.garticDescription}
-                        title={Dictionary.gartic} />
-                </Carousel.Slide>
-                <Carousel.Slide>
-                    <Project src={checkersPhoto}
-                        link={'https://github.com/RalucaDavid/Checkers'}
-                        description={Dictionary.checkersDescription}
-                        title={Dictionary.checkers} />
-                </Carousel.Slide>
-            </Carousel>
+            <div className={classes.projectsContainer}>
+                {specialProjects.slice(0,1).map((project, index) => (
+                    <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.comingSoon}
+                    technologies={project.technologies}
+                    ></Project>
+                ))}
+                {webProjects.map((project, index) => (
+                    <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.githubRepository}
+                    technologies={project.technologies}
+                    ></Project>
+                ))}
+                {specialProjects.slice(1,2).map((project, index) => (
+                    <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.rightHere}
+                    technologies={project.technologies}
+                    ></Project>
+                ))}
+            </div>
         </div>
     );
 };
