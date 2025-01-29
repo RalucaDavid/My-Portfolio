@@ -21,7 +21,7 @@ const Project = ({ src, link, description, name, buttonText, technologies }: Pro
     };
 
     return (
-        <Card shadow="sm" padding="sm" radius="md" withBorder className={classes.transparentCard}>
+        <Card className={classes.transparentCard}>
             <Card.Section>
                 <Image
                     src={src}
@@ -30,25 +30,23 @@ const Project = ({ src, link, description, name, buttonText, technologies }: Pro
                 />
             </Card.Section>
 
-            <Group justify="space-between" mt="sm" mb="xs">
-                <Text fw={500}>{name}</Text>
-            </Group>
+            <div className={classes.cardContent}>
+                <Group mt="xs" mb="xs">
+                    <Text fw={500}>{name}</Text>
+                    <Text className="description" size="sm" c="dimmed">
+                        {description}
+                    </Text>
+                </Group>
 
-            <Text size="sm" c="dimmed">
-                {description}
-            </Text>
-
-            <Group mt="xs">
-                <Text className={classes.technologies}>
-                    {technologies.join(" | ")}
-                </Text>
-            </Group>
-
-            <Button fullWidth mt="sm" radius="md" className={classes.customButton}
-                onClick={link.trim() !== "" ? openLink : undefined}
-            >
-                {buttonText}
-            </Button>
+                <Group mt="xs" mb="xs" className={classes.others}>
+                    <Text className={classes.technologies}>
+                        {technologies.join(" | ")}
+                    </Text>
+                    <Button fullWidth mt="sm" radius="md" className={classes.customButton} onClick={link.trim() !== "" ? openLink : undefined}>
+                        {buttonText}
+                    </Button>
+                </Group>
+            </div>
         </Card>
     );
 };
