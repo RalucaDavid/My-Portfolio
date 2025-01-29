@@ -7,7 +7,7 @@
     justify-content: space-around;
     padding: 10px;
     gap: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -23,21 +23,6 @@
     .navBar {
         height: auto;
         padding: 20px;
-    }
-
-    .text {
-        font-size: 18px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .navBar {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .text {
-        font-size: 16px !important;
     }
 
     .text {
