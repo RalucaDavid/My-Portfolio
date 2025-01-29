@@ -51,28 +51,14 @@
     box-shadow: 0 8px 12px var(--shadow-hover);
 }
 
-.contactLinks a.linkedin {
-    background-color: var(--linkedin);
+.contactLinks a.github, .contactLinks a.email, .contactLinks a.linkedin {
+    background-color: var(--background-transparent);
+    border: 2px solid var(--purple-hover) !important;
+    border-radius: 12px !important;
 }
 
-.contactLinks a.github {
-    background-color: var(--github);
-}
-
-.contactLinks a.email {
-    background-color: var(--email);
-}
-
-.contactLinks a.linkedin:hover {
-    background-color: var(--linkedin-hover);
-}
-
-.contactLinks a.github:hover {
-    background-color: var(--github-hover);
-}
-
-.contactLinks a.email:hover {
-    background-color: var(--email-hover);
+.contactLinks a.linkedin:hover, .contactLinks a.github:hover, .contactLinks a.email:hover {
+    box-shadow: 0 6px 15px var(--purple-hover) !important;
 }
 
 @media (max-width: 768px) {

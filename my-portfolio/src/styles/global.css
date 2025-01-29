@@ -9,19 +9,12 @@
     --black: #000000;
     --purple-low: rgba(150, 21, 219, 0.5);
 
-    /* Social Media */
-    --linkedin: #0077B5;
-    --github:#333;
-    --email: #D14836;
     --shadow: rgba(0, 0, 0, 0.1);
-    --linkedin-hover: #005983;
-    --github-hover: #24292e;
-    --email-hover: #b1362d;
     --shadow-hover:rgba(0, 0, 0, 0.2);
 
-    /* Project */
     --background-transparent: rgba(0, 0, 0, 0.5);
     --purple-hover: rgba(150, 21, 219, 0.3);
     --purple-shadow: rgba(150, 21, 219, 0.1);
     --purple-small: rgba(150, 21, 219, 0.9);
+    --purple-medium: rgba(150, 21, 219, 0.7);
 }
