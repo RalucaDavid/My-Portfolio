@@ -27,10 +27,14 @@ const StarryBackground = () => {
 
     const colorArray = [purpleColor, whiteColor, grayLightColor];
 
+    const radius = 1000;
     for (let i = 0; i < 1000; i++) {
-      const x = (Math.random() - 0.5) * 2000;
-      const y = (Math.random() - 0.5) * 2000;
-      const z = (Math.random() - 0.5) * 2000;
+      const theta = 2 * Math.PI * Math.random();
+      const phi = Math.acos(2 * Math.random() - 1);
+
+      const x = radius * Math.sin(phi) * Math.cos(theta);
+      const y = radius * Math.sin(phi) * Math.sin(theta);
+      const z = radius * Math.cos(phi);
 
       vertices.push(x, y, z);
 
@@ -43,10 +47,10 @@ const StarryBackground = () => {
     geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 
     const material = new THREE.PointsMaterial({
-        size: 4, 
-        vertexColors: true, 
-        transparent: true, 
-        opacity: 0.8,
+      size: 4, 
+      vertexColors: true, 
+      transparent: true, 
+      opacity: 0.8,
     });
 
     const points = new THREE.Points(geometry, material);
@@ -65,7 +69,16 @@ const StarryBackground = () => {
 
     animate();
 
+    const handleResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleResize);
+
     return () => {
+      window.removeEventListener('resize', handleResize);
       // eslint-disable-next-line react-hooks/exhaustive-deps
       if (canvasRef.current) {
         document.body.removeChild(renderer.domElement);
