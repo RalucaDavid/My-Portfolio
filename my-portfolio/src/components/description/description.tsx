@@ -1,25 +1,28 @@
-import { Text } from '@mantine/core';
-import { Image } from '@mantine/core';
+import { Text, Image } from '@mantine/core';
 import classes from './description.module.css';
 import profileImage from '../../assets/profile.jpg';
 import { Dictionary } from '../../dictionaries/en';
+
+const { hello, aboutMeText } = Dictionary;
 
 const Description = () => {
     return (
         <div className={classes.descriptionWrapper}>
             <div className={classes.info}>
                 <Text className={classes.greeting}>
-                    {Dictionary.hello}
+                    {hello}
                 </Text>
                 <Text className={classes.aboutMe}>
-                    {Dictionary.aboutMeText}
+                    {aboutMeText}
                 </Text>
             </div>
             <Image
-                h={200}
-                w="auto"
+                height={200}
+                width="auto"
                 className={classes.image}
-                src={profileImage} />
+                src={profileImage}
+                loading="lazy"
+            />
         </div>
     );
 };

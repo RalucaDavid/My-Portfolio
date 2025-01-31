@@ -27,6 +27,7 @@ const Project = ({ src, link, description, name, buttonText, technologies }: Pro
                     src={src}
                     height={160}
                     alt={name}
+                    loading="lazy"
                 />
             </Card.Section>
 

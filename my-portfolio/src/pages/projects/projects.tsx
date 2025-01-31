@@ -6,24 +6,24 @@ import { specialProjects, webProjects } from '../../data/projects';
 
 const Projects = () => {
     return (
-        <div className={classes.bestProjectsWrapper}>
+        <div className={classes.projectsWrapper}>
             <Text className={classes.title}>
                 {Dictionary.projects}
             </Text>
             <div className={classes.projectsContainer}>
                 {specialProjects.slice(0,1).map((project, index) => (
                     <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.comingSoon}
-                    technologies={project.technologies}
+                    technologies={project.technologies} key={index}
                     ></Project>
                 ))}
                 {webProjects.map((project, index) => (
                     <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.githubRepository}
-                    technologies={project.technologies}
+                    technologies={project.technologies} key={index}
                     ></Project>
                 ))}
                 {specialProjects.slice(1,2).map((project, index) => (
                     <Project src={project.src} link={project.link} description={project.description} name={project.name} buttonText={Dictionary.rightHere}
-                    technologies={project.technologies}
+                    technologies={project.technologies} key={index}
                     ></Project>
                 ))}
             </div>

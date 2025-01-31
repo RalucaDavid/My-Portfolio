@@ -17,8 +17,8 @@
     object-fit: cover !important;
     flex-shrink: 0 !important;
     border: 4px solid var(--purple-hover) !important;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 .greeting, .aboutMe {
@@ -40,8 +40,8 @@
     }
 
     .image {
-        width: 140px !important; 
-        height: 140px !important;
+        width: 170px !important; 
+        height: 170px !important;
     }
 
     .greeting {

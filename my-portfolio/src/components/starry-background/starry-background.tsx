@@ -47,7 +47,7 @@ const StarryBackground = () => {
     geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 
     const material = new THREE.PointsMaterial({
-      size: 4, 
+      size: 5, 
       vertexColors: true, 
       transparent: true, 
       opacity: 0.8,

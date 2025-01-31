@@ -11,14 +11,14 @@ const TopSkills = () => {
          <div className={classes.logoContainer}>
             {skills.slice(0, 5).map((skill, index) => (
                <div key={index} className={classNames(classes.logo, classes.logoAnimation)}>
-                 <img src={skill.src} alt={skill.alt} />
+                 <img src={skill.src} alt={skill.alt} loading="lazy"/>
                </div>
             ))}
          </div>
          <div className={classes.logoContainer}>
             {skills.slice(5, 10).map((skill, index) => (
                <div key={index} className={classNames(classes.logo, classes.logoAnimation)}>
-                 <img src={skill.src} alt={skill.alt} />
+                 <img src={skill.src} alt={skill.alt} loading="lazy"/>
                </div>
             ))}
          </div>
