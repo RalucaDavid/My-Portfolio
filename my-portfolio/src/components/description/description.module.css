@@ -12,13 +12,24 @@
     margin: 50px 0px 0px 0px;
 }
 
-.image {
+.image, .imageWrapper {
     border-radius: 50% !important;
     object-fit: cover !important;
     flex-shrink: 0 !important;
-    border: 4px solid var(--purple-hover) !important;
     width: 200px;
     height: 200px;
+}
+
+.image{
+    border: 4px solid var(--purple-hover) !important;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.image.loaded {
+    opacity: 1;
+    filter: blur(0);
 }
 
 .greeting, .aboutMe {
@@ -39,7 +50,7 @@
         padding: 20px;
     }
 
-    .image {
+    .image, .imageWrapper {
         width: 170px !important; 
         height: 170px !important;
     }
@@ -61,7 +72,7 @@
         height: auto;
     }
 
-    .image {
+    .image, .imageWrapper {
         width: 130px !important; 
         height: 130px !important;
     }

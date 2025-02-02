@@ -1,5 +1,6 @@
-import { Button, Card, Group, Image, Text } from '@mantine/core';
+import { Button, Card, Group, Image as MantineImage, Text } from '@mantine/core';
 import classes from './project.module.css';
+import { useEffect, useState } from 'react';
 
 interface ProjectProps {
     src: string;
@@ -11,6 +12,14 @@ interface ProjectProps {
 }
 
 const Project = ({ src, link, description, name, buttonText, technologies }: ProjectProps) => {
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => setLoaded(true);
+    }, [src]);
+
     const openLink = () => {
         try {
             const url = new URL(link);
@@ -23,12 +32,15 @@ const Project = ({ src, link, description, name, buttonText, technologies }: Pro
     return (
         <Card className={classes.transparentCard}>
             <Card.Section>
-                <Image
-                    src={src}
-                    height={160}
-                    alt={name}
-                    loading="lazy"
-                />
+                <div className={classes.imageWrapper}>
+                    <MantineImage
+                        src={src}
+                        height={160}
+                        alt={name}
+                        loading="lazy"
+                        className={loaded ? classes.loaded : classes.blur}
+                    />
+                </div>
             </Card.Section>
 
             <div className={classes.cardContent}>

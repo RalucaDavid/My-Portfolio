@@ -46,6 +46,14 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.logo img.loaded {
+    opacity: 1; 
+    filter: blur(0);
 }
 
 .logoAnimation {
