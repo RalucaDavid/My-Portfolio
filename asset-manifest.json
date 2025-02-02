@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.45000fff.css",
-    "main.js": "/My-Portfolio/static/js/main.6e605069.js",
+    "main.css": "/My-Portfolio/static/css/main.78acf07d.css",
+    "main.js": "/My-Portfolio/static/js/main.158eb8c0.js",
     "static/js/453.acca0757.chunk.js": "/My-Portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/stardew-valley-the-board-game.jpg": "/My-Portfolio/static/media/stardew-valley-the-board-game.ca025bff8e2402f9733b.jpg",
-    "static/media/csharp-logo.png": "/My-Portfolio/static/media/csharp-logo.e095694584811ade286e.png",
-    "static/media/react-logo.png": "/My-Portfolio/static/media/react-logo.2f2532db663fd5ec5f95.png",
-    "static/media/profile.jpg": "/My-Portfolio/static/media/profile.45383f7eb28951e5097f.jpg",
-    "static/media/my-portfolio.jpg": "/My-Portfolio/static/media/my-portfolio.8eb64d6218a10bc6d83d.jpg",
-    "static/media/flight-booking.jpg": "/My-Portfolio/static/media/flight-booking.958dfb681d28109b0d1c.jpg",
-    "static/media/cplusplus-logo.png": "/My-Portfolio/static/media/cplusplus-logo.622bc0da2431d0794e3d.png",
-    "static/media/news-talk.jpg": "/My-Portfolio/static/media/news-talk.9d107405693d34520930.jpg",
-    "static/media/chat-connect.jpg": "/My-Portfolio/static/media/chat-connect.230e1ea7976e995d8ba8.jpg",
+    "static/media/stardew-valley-the-board-game.jpg": "/My-Portfolio/static/media/stardew-valley-the-board-game.4822cf580c165542569a.jpg",
+    "static/media/react-logo.png": "/My-Portfolio/static/media/react-logo.f550e2faf14d7b62a50a.png",
+    "static/media/csharp-logo.png": "/My-Portfolio/static/media/csharp-logo.f869f2a45ca3e67ce672.png",
+    "static/media/profile.jpg": "/My-Portfolio/static/media/profile.ad7eca196f09db999c65.jpg",
+    "static/media/my-portfolio.jpg": "/My-Portfolio/static/media/my-portfolio.fdd0041a2b304768502f.jpg",
+    "static/media/flight-booking.jpg": "/My-Portfolio/static/media/flight-booking.76ba8011bb9d595871c3.jpg",
+    "static/media/cplusplus-logo.png": "/My-Portfolio/static/media/cplusplus-logo.8b6d6499ee5aef6f95c2.png",
+    "static/media/chat-connect.jpg": "/My-Portfolio/static/media/chat-connect.e9608e98ee38e7e949c6.jpg",
     "static/media/angular-logo.png": "/My-Portfolio/static/media/angular-logo.2aeaa5ba2af8dbdf2af6.png",
+    "static/media/news-talk.jpg": "/My-Portfolio/static/media/news-talk.6b435b39f8e97eafadfa.jpg",
     "index.html": "/My-Portfolio/index.html",
-    "main.45000fff.css.map": "/My-Portfolio/static/css/main.45000fff.css.map",
-    "main.6e605069.js.map": "/My-Portfolio/static/js/main.6e605069.js.map",
+    "main.78acf07d.css.map": "/My-Portfolio/static/css/main.78acf07d.css.map",
+    "main.158eb8c0.js.map": "/My-Portfolio/static/js/main.158eb8c0.js.map",
     "453.acca0757.chunk.js.map": "/My-Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45000fff.css",
-    "static/js/main.6e605069.js"
+    "static/css/main.78acf07d.css",
+    "static/js/main.158eb8c0.js"
   ]
 }
