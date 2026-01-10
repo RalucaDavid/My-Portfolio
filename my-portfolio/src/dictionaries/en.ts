@@ -8,7 +8,7 @@ export const Dictionary = {
   projects: "Projects",
   hello: "Hello!",
   aboutMeText:
-    "Currently pursuing my Master's degree, I am an Web Developer with a strong foundation in coding. I thrive in dynamic environments and have a knack for learning new technologies and tools rapidly. I am focused on creating engaging web solutions and am always eager to take on new technical challenges.",
+    "Currently pursuing my Master's degree, I am a Web Developer with a strong foundation in coding. I thrive in dynamic environments and have a knack for learning new technologies and tools rapidly. I am focused on creating engaging web solutions and am always eager to take on new technical challenges.",
   contactText: "Let's collaborate! You can find me on:",
   linkedIn: "LinkedIn",
   gitHub: "GitHub",
