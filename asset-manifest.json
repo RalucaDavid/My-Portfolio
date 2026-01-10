@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.78acf07d.css",
-    "main.js": "/My-Portfolio/static/js/main.158eb8c0.js",
+    "main.js": "/My-Portfolio/static/js/main.689ed295.js",
     "static/js/453.acca0757.chunk.js": "/My-Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/stardew-valley-the-board-game.jpg": "/My-Portfolio/static/media/stardew-valley-the-board-game.4822cf580c165542569a.jpg",
     "static/media/react-logo.png": "/My-Portfolio/static/media/react-logo.f550e2faf14d7b62a50a.png",
+    "static/media/fuel-receipts-manager.jpg": "/My-Portfolio/static/media/fuel-receipts-manager.e8fe11b5c034ef534a14.jpg",
     "static/media/csharp-logo.png": "/My-Portfolio/static/media/csharp-logo.f869f2a45ca3e67ce672.png",
+    "static/media/gradebook.jpg": "/My-Portfolio/static/media/gradebook.db781c6334eee3633e0d.jpg",
     "static/media/profile.jpg": "/My-Portfolio/static/media/profile.ad7eca196f09db999c65.jpg",
-    "static/media/my-portfolio.jpg": "/My-Portfolio/static/media/my-portfolio.fdd0041a2b304768502f.jpg",
     "static/media/flight-booking.jpg": "/My-Portfolio/static/media/flight-booking.76ba8011bb9d595871c3.jpg",
-    "static/media/cplusplus-logo.png": "/My-Portfolio/static/media/cplusplus-logo.8b6d6499ee5aef6f95c2.png",
+    "static/media/java-logo.png": "/My-Portfolio/static/media/java-logo.f5dd86c3ef6ef3f85acf.png",
     "static/media/chat-connect.jpg": "/My-Portfolio/static/media/chat-connect.e9608e98ee38e7e949c6.jpg",
     "static/media/angular-logo.png": "/My-Portfolio/static/media/angular-logo.2aeaa5ba2af8dbdf2af6.png",
-    "static/media/news-talk.jpg": "/My-Portfolio/static/media/news-talk.6b435b39f8e97eafadfa.jpg",
+    "static/media/typescript-logo.png": "/My-Portfolio/static/media/typescript-logo.bb13ebd9561a6ee645c2.png",
     "index.html": "/My-Portfolio/index.html",
     "main.78acf07d.css.map": "/My-Portfolio/static/css/main.78acf07d.css.map",
-    "main.158eb8c0.js.map": "/My-Portfolio/static/js/main.158eb8c0.js.map",
+    "main.689ed295.js.map": "/My-Portfolio/static/js/main.689ed295.js.map",
     "453.acca0757.chunk.js.map": "/My-Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78acf07d.css",
-    "static/js/main.158eb8c0.js"
+    "static/js/main.689ed295.js"
   ]
 }
