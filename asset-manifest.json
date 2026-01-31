@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.78acf07d.css",
-    "main.js": "/My-Portfolio/static/js/main.b79052ce.js",
+    "main.js": "/My-Portfolio/static/js/main.773b4b79.js",
     "static/js/453.acca0757.chunk.js": "/My-Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/stardew-valley-the-board-game.jpg": "/My-Portfolio/static/media/stardew-valley-the-board-game.4822cf580c165542569a.jpg",
     "static/media/react-logo.png": "/My-Portfolio/static/media/react-logo.f550e2faf14d7b62a50a.png",
@@ -16,11 +16,11 @@
     "static/media/typescript-logo.png": "/My-Portfolio/static/media/typescript-logo.bb13ebd9561a6ee645c2.png",
     "index.html": "/My-Portfolio/index.html",
     "main.78acf07d.css.map": "/My-Portfolio/static/css/main.78acf07d.css.map",
-    "main.b79052ce.js.map": "/My-Portfolio/static/js/main.b79052ce.js.map",
+    "main.773b4b79.js.map": "/My-Portfolio/static/js/main.773b4b79.js.map",
     "453.acca0757.chunk.js.map": "/My-Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78acf07d.css",
-    "static/js/main.b79052ce.js"
+    "static/js/main.773b4b79.js"
   ]
 }
