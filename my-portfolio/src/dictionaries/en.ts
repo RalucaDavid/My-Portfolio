@@ -20,7 +20,7 @@ export const Dictionary = {
   gradebookDescription:
     "Gradebook is an educational web application designed to help teachers maintain course data and grades, giving students direct access to their performance across all enrolled classes.",
   fuelReceiptsManagerDescription:
-    "Fuel Receipts Manager is a comprehensive Web & Mobile solution for digitizing and managing fuel expenses. It features intelligent receipt scanning (OCR) for automated data entry and offers seamless CSV data export for reporting.",
+    "Fuel Receipts Manager is a comprehensive Web & Mobile solution for digitizing and managing fuel expenses. It will feature intelligent receipt scanning (OCR) for automated data entry and will offer seamless CSV data export for reporting.",
   stardewValleyDescription:
     "Stardew Valley: The Board Game is a web-based app offering a digital version of the popular board game, featuring a smoother, fully automated gameplay experience without drag-and-drop interactions, unlike other existing versions.",
   myPortfolioDescription:

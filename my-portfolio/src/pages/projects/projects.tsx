@@ -15,7 +15,7 @@ const Projects = () => {
             link={project.link}
             description={project.description}
             name={project.name}
-            buttonText={Dictionary.comingSoon}
+            buttonText={Dictionary.githubRepository}
             technologies={project.technologies}
             key={index}
           ></Project>

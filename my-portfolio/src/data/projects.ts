@@ -13,7 +13,7 @@ export const specialProjects: Project[] = [
   {
     name: "Fuel Receipts Manager",
     description: Dictionary.fuelReceiptsManagerDescription,
-    link: "Coming soon",
+    link: "https://github.com/RalucaDavid/FuelReceipt-Manager",
     src: fuelReceiptsManagerPhoto,
     technologies: ["Next.js", "Expo", "Spring Boot", "PostgreSQL"],
   },
